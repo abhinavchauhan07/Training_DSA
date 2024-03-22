@@ -27,7 +27,7 @@ int medianOfTwoSortedArrays(vector<int>&array1,vector<int>&array2)
             //if the array1 element is smaller than the element of array2
             if (array1[array1Pointer] < array2[array2Pointer]) {
                 if (counter == indexForOdd) medianForOdd = array1[array1Pointer];
-                if (counter == indexForEven) medianForEven = array1[array2Pointer];
+                if (counter == indexForEven) medianForEven = array1[array1Pointer];
                 counter++;
                 array1Pointer++;
             }//if the array2 element is smaller than the element of array1
